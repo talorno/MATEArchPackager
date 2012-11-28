@@ -36,23 +36,8 @@ entries.extend( feed[ "items" ] )
 toCompile = [[package]]
 
 
-
-# suffix = "-1.5.0.tar.xz"
-
-
-# enqueue aggiunge un pacchetto alla coda di compilazione
-def enqueue(nomepacchetto,nomefile):
-	#blabla
-	# print nomepacchetto,nomefile
-
-	# p = package()
-
-
-	# toCompile.append(nomepacchetto,nomefile);
-	return 1 
-
-
-# nameConvert ricava il nome del pacchetto dal nome del file
+# createPackage si occupa di ricavare le informazioni necessarie dall'elemento del feed,creare
+# un oggetto di tipo package e ritornarlo
 def createPackage(entry):
 
 	# converted=nomeFile.strip(suffix)
@@ -69,6 +54,9 @@ def createPackage(entry):
 	return p
 
 
+# accodo in toCompile tutti i pacchetti piu' recenti dell'ultima data di controllo
+# [attualmente uso localtime per comodità ma ovviamente bisognerà
+# salvare la data dell'ultimo controllo]
 
 for i in entries:
 	if i["published_parsed"] < localtime:
