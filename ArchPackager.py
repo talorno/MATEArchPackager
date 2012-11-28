@@ -40,7 +40,6 @@ toCompile = [[package]]
 # un oggetto di tipo package e ritornarlo
 def createPackage(entry):
 
-	# converted=nomeFile.strip(suffix)
 	name = entry.title[:-13]
 	name = name.title()
 	name = name.replace('-',' ')
