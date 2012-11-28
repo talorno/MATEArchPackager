@@ -17,13 +17,6 @@ entries.extend( feed[ "items" ] )
 toCompile = []
 
 
-# print entries[3]["title"], entries[3]["published_parsed"][0:15]
-
-
-# print now
-# print localtime
-# print localtime[0:15]
-
 # enqueue aggiunge un pacchetto alla coda di compilazione
 def enqueue(nomepacchetto,nomefile):
 	#blabla
