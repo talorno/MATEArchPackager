@@ -55,8 +55,8 @@ def createPackage(entry):
 
 
 # accodo in toCompile tutti i pacchetti piu' recenti dell'ultima data di controllo
-# [attualmente uso localtime per comodità ma ovviamente bisognerà
-# salvare la data dell'ultimo controllo]
+# attualmente uso localtime per comodita' ma ovviamente bisognera'
+# salvare la data dell'ultimo controllo
 
 for i in entries:
 	if i["published_parsed"] < localtime:
